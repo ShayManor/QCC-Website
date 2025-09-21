@@ -122,7 +122,7 @@ body {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #666;
+    color: #9a9a9a;
     line-height: 1.8;
 }
 
@@ -296,18 +296,32 @@ body {
 
     .about-workshop h3,
     .fest-text h3,
-    .speakers h3 {
+    .speakers h3,
+    .team-section h3 {
         font-size: 2rem;
     }
 
     .highlight-grid,
-    .prizes-grid {
+    .prizes-grid,
+    .mission-grid,
+    .involvement-options {
         grid-template-columns: 1fr;
     }
 
     .learning-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .member-photo-placeholder,
+    .member-photo {
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -450,4 +464,164 @@ body {
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+/* Smaller Hero for Learn Page */
+.hero-small h1 {
+    font-size: 2.8rem;
+}
+
+.hero-small h2 {
+    font-size: 1.3rem;
+}
+
+.hero-small {
+    padding: 70px 0;
+}
+
+/* About Page Styles */
+.club-mission {
+    margin-top: 50px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-card {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card h4 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #d2d0d0;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team-section h3 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.team-intro {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo-placeholder {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.team-member h4 {
+    font-size: 1.4rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.member-major {
+    font-size: 1rem;
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* Get Involved Section */
+.involvement-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.involvement-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.involvement-card:hover {
+    transform: translateY(-5px);
+}
+
+.involvement-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.involvement-card p {
+    line-height: 1.6;
+    opacity: 0.95;
 }
