@@ -122,7 +122,7 @@ body {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #9a9a9a;
+    color: #666;
     line-height: 1.8;
 }
 
@@ -479,6 +479,10 @@ body {
     padding: 70px 0;
 }
 
+.hero-smaller {
+    padding: 50px 0;
+}
+
 /* About Page Styles */
 .club-mission {
     margin-top: 50px;
@@ -492,7 +496,7 @@ body {
 }
 
 .mission-card {
-    background: #f8f8f8;
+    background: #f8f9fa;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -538,7 +542,7 @@ body {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
