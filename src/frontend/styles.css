@@ -1,0 +1,453 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    opacity: 0.2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.event-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.date {
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.register-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+/* About Workshop Section */
+.about-workshop {
+    background: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-workshop h3 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.about-workshop p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Qiskit Fall Fest Section */
+.qiskit-fest {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.fest-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.fest-badge {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.fest-text h3 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.fest-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Speakers Section */
+.speakers {
+    background: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.speakers h3 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.tbd-notice {
+    background: #f0f4f8;
+    border: 2px dashed #cbd5e0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tbd-notice p {
+    font-size: 1.2rem;
+    color: #718096;
+    font-style: italic;
+    margin: 0;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.speaker-card {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-placeholder {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.speaker-card h4 {
+    font-size: 1.3rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.speaker-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contact-logo {
+    height: 60px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffed4a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .fest-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-workshop h3,
+    .fest-text h3,
+    .speakers h3 {
+        font-size: 2rem;
+    }
+
+    .highlight-grid,
+    .prizes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Learn Page Specific Styles */
+.workshop-highlights {
+    margin-top: 40px;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.highlight-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h4 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.highlight-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.learning-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.learning-topics h4 {
+    font-size: 1.8rem;
+    color: #4a5568;
+    margin-bottom: 25px;
+}
+
+.learning-topics ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.learning-topics li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.learning-topics li:last-child {
+    border-bottom: none;
+}
+
+.quantum-visual {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.quantum-visual h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.quantum-visual p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.prizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.prize-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.prize-card:hover {
+    transform: translateY(-5px);
+}
+
+.prize-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.prize-card p {
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.schedule-preview {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-note {
+    background: #fff5f5;
+    border: 2px solid #fed7d7;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+}
+
+.schedule-note h4 {
+    font-size: 1.5rem;
+    color: #c53030;
+    margin-bottom: 20px;
+}
+
+.schedule-note p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
