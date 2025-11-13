@@ -705,3 +705,86 @@ body {
         max-width: 200px;
     }
 }
+
+/* Workshop Materials Section */
+.workshop-materials {
+    background: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.workshop-materials h3 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.material-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+}
+
+.material-card.completion {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(255, 142, 142, 0.05));
+    border-color: #fed7d7;
+}
+
+.material-card h4 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.material-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.material-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.material-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.completion-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.completion-btn:hover {
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+}
+
+@media (max-width: 768px) {
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+}
